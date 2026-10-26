@@ -1,0 +1,174 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My DevOps Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            font-size: 26px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1d4ed8, #0f172a);
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #facc15;
+            color: #172554;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .projects {
+            padding: 50px 8%;
+            text-align: center;
+        }
+
+        .projects h2 {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                gap: 10px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My DevOps Journey</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Welcome to My DevOps Portfolio</h2>
+        <p>Learning AWS, Terraform, Jenkins, Linux and Cloud Automation.</p>
+        <a class="button"
+           href="https://github.com/pravaws1-png/terraform1"
+           target="_blank"
+           rel="noopener noreferrer">
+            View My GitHub Project
+        </a>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Terraform</h3>
+                <p>Infrastructure as Code for managing AWS resources.</p>
+            </div>
+
+            <div class="card">
+                <h3>AWS Cloud</h3>
+                <p>Hands-on practice with EC2, S3, IAM and VPC.</p>
+            </div>
+
+            <div class="card">
+                <h3>Jenkins CI/CD</h3>
+                <p>Automating infrastructure validation and deployment.</p>
+            </div>
+
+            <div class="card">
+                <h3>Linux</h3>
+                <p>Command-line administration and troubleshooting.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>My DevOps Learning Portfolio | Built with HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
